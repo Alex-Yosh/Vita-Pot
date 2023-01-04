@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2BBE93272B306000A5464B /* VitaPotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBE92272B306000A5464B /* VitaPotApp.swift */; };
+		FA2BBE95272B306000A5464B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBE94272B306000A5464B /* ContentView.swift */; };
+		FA2BBE97272B306100A5464B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBE96272B306100A5464B /* Assets.xcassets */; };
+		FA2BBE9A272B306100A5464B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBE99272B306100A5464B /* Preview Assets.xcassets */; };
+		FA2BBEA7272B39F900A5464B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEA6272B39F900A5464B /* Grid.swift */; };
+		FA2BBEA9272B3C6E00A5464B /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEA8272B3C6E00A5464B /* Plant.swift */; };
+		FA2BBEAB272B467C00A5464B /* AddNewPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */; };
+		FA2BBEAD272BA54B00A5464B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAC272BA54B00A5464B /* DetailView.swift */; };
+		FA2BBEAF272BB49700A5464B /* RemovePlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAE272BB49700A5464B /* RemovePlant.swift */; };
+		FA2BBEB1272C01CE00A5464B /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEB0272C01CE00A5464B /* PlantData.swift */; };
+		FA2BBEBF272CE78F00A5464B /* Letters for Learners.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBEBE272CE78E00A5464B /* Letters for Learners.ttf */; };
+		FA2BBEC5272D616A00A5464B /* EditPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC4272D616A00A5464B /* EditPlant.swift */; };
+		FA2BBEC7272DFFC200A5464B /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC6272DFFC200A5464B /* Greetings.swift */; };
+		FA2BBEC9272E005B00A5464B /* DarkmodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC8272E005B00A5464B /* DarkmodeButton.swift */; };
+		FA2BBECB272E137100A5464B /* GridCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBECA272E137100A5464B /* GridCells.swift */; };
+		FA2BBED7272E154F00A5464B /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBED6272E154F00A5464B /* Favourite.swift */; };
+		FA2BBED9272F63C900A5464B /* CannotSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBED8272F63C800A5464B /* CannotSelect.swift */; };
+		FA2BBEDC272F66E000A5464B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEDB272F66E000A5464B /* Bluetooth.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA2BBE8F272B306000A5464B /* VitaPot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitaPot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2BBE92272B306000A5464B /* VitaPotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaPotApp.swift; sourceTree = "<group>"; };
+		FA2BBE94272B306000A5464B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA2BBE96272B306100A5464B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2BBE99272B306100A5464B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA2BBE9B272B306100A5464B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2BBEA6272B39F900A5464B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		FA2BBEA8272B3C6E00A5464B /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlant.swift; sourceTree = "<group>"; };
+		FA2BBEAC272BA54B00A5464B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FA2BBEAE272BB49700A5464B /* RemovePlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovePlant.swift; sourceTree = "<group>"; };
+		FA2BBEB0272C01CE00A5464B /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
+		FA2BBEBE272CE78E00A5464B /* Letters for Learners.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners.ttf"; sourceTree = "<group>"; };
+		FA2BBEC4272D616A00A5464B /* EditPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlant.swift; sourceTree = "<group>"; };
+		FA2BBEC6272DFFC200A5464B /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
+		FA2BBEC8272E005B00A5464B /* DarkmodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkmodeButton.swift; sourceTree = "<group>"; };
+		FA2BBECA272E137100A5464B /* GridCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCells.swift; sourceTree = "<group>"; };
+		FA2BBED6272E154F00A5464B /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		FA2BBED8272F63C800A5464B /* CannotSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannotSelect.swift; sourceTree = "<group>"; };
+		FA2BBEDB272F66E000A5464B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		FAE0523127A74EA7007B2F61 /* VitaPot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VitaPot.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2BBE8C272B306000A5464B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA2BBE86272B306000A5464B = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE91272B306000A5464B /* VitaPot */,
+				FA2BBE90272B306000A5464B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2BBE90272B306000A5464B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE8F272B306000A5464B /* VitaPot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2BBE91272B306000A5464B /* VitaPot */ = {
+			isa = PBXGroup;
+			children = (
+				FAE0523127A74EA7007B2F61 /* VitaPot.entitlements */,
+				FA2BBED3272E14D900A5464B /* App */,
+				FA2BBED2272E14AC00A5464B /* Main Page */,
+				FA2BBECD272E13A500A5464B /* Title */,
+				FA2BBECC272E138A00A5464B /* Grid */,
+				FA2BBECE272E140E00A5464B /* PlantAndOperations */,
+				FA2BBEDA272F66C600A5464B /* Bluetooth */,
+				FA2BBED0272E145D00A5464B /* DetailsPage */,
+				FA2BBED1272E147A00A5464B /* Assets */,
+				FA2BBE9B272B306100A5464B /* Info.plist */,
+				FA2BBE98272B306100A5464B /* Preview Content */,
+			);
+			path = VitaPot;
+			sourceTree = "<group>";
+		};
+		FA2BBE98272B306100A5464B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE99272B306100A5464B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA2BBEA5272B350900A5464B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEBE272CE78E00A5464B /* Letters for Learners.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA2BBECC272E138A00A5464B /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEA6272B39F900A5464B /* Grid.swift */,
+				FA2BBECA272E137100A5464B /* GridCells.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		FA2BBECD272E13A500A5464B /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEC8272E005B00A5464B /* DarkmodeButton.swift */,
+				FA2BBEC6272DFFC200A5464B /* Greetings.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		FA2BBECE272E140E00A5464B /* PlantAndOperations */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEA8272B3C6E00A5464B /* Plant.swift */,
+				FA2BBEB0272C01CE00A5464B /* PlantData.swift */,
+				FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */,
+				FA2BBEAE272BB49700A5464B /* RemovePlant.swift */,
+				FA2BBEC4272D616A00A5464B /* EditPlant.swift */,
+			);
+			path = PlantAndOperations;
+			sourceTree = "<group>";
+		};
+		FA2BBED0272E145D00A5464B /* DetailsPage */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEAC272BA54B00A5464B /* DetailView.swift */,
+				FA2BBED6272E154F00A5464B /* Favourite.swift */,
+				FA2BBED8272F63C800A5464B /* CannotSelect.swift */,
+			);
+			path = DetailsPage;
+			sourceTree = "<group>";
+		};
+		FA2BBED1272E147A00A5464B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE96272B306100A5464B /* Assets.xcassets */,
+				FA2BBEA5272B350900A5464B /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FA2BBED2272E14AC00A5464B /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE94272B306000A5464B /* ContentView.swift */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		FA2BBED3272E14D900A5464B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBE92272B306000A5464B /* VitaPotApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA2BBEDA272F66C600A5464B /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BBEDB272F66E000A5464B /* Bluetooth.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2BBE8E272B306000A5464B /* VitaPot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2BBE9E272B306100A5464B /* Build configuration list for PBXNativeTarget "VitaPot" */;
+			buildPhases = (
+				FA2BBE8B272B306000A5464B /* Sources */,
+				FA2BBE8C272B306000A5464B /* Frameworks */,
+				FA2BBE8D272B306000A5464B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VitaPot;
+			productName = VitaPot;
+			productReference = FA2BBE8F272B306000A5464B /* VitaPot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2BBE87272B306000A5464B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FA2BBE8E272B306000A5464B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = FA2BBE8A272B306000A5464B /* Build configuration list for PBXProject "VitaPot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA2BBE86272B306000A5464B;
+			productRefGroup = FA2BBE90272B306000A5464B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2BBE8E272B306000A5464B /* VitaPot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2BBE8D272B306000A5464B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BBE9A272B306100A5464B /* Preview Assets.xcassets in Resources */,
+				FA2BBEBF272CE78F00A5464B /* Letters for Learners.ttf in Resources */,
+				FA2BBE97272B306100A5464B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2BBE8B272B306000A5464B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BBEAF272BB49700A5464B /* RemovePlant.swift in Sources */,
+				FA2BBEDC272F66E000A5464B /* Bluetooth.swift in Sources */,
+				FA2BBEAB272B467C00A5464B /* AddNewPlant.swift in Sources */,
+				FA2BBEAD272BA54B00A5464B /* DetailView.swift in Sources */,
+				FA2BBEB1272C01CE00A5464B /* PlantData.swift in Sources */,
+				FA2BBE95272B306000A5464B /* ContentView.swift in Sources */,
+				FA2BBEA9272B3C6E00A5464B /* Plant.swift in Sources */,
+				FA2BBE93272B306000A5464B /* VitaPotApp.swift in Sources */,
+				FA2BBECB272E137100A5464B /* GridCells.swift in Sources */,
+				FA2BBEA7272B39F900A5464B /* Grid.swift in Sources */,
+				FA2BBEC9272E005B00A5464B /* DarkmodeButton.swift in Sources */,
+				FA2BBED7272E154F00A5464B /* Favourite.swift in Sources */,
+				FA2BBEC7272DFFC200A5464B /* Greetings.swift in Sources */,
+				FA2BBED9272F63C900A5464B /* CannotSelect.swift in Sources */,
+				FA2BBEC5272D616A00A5464B /* EditPlant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA2BBE9C272B306100A5464B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA2BBE9D272B306100A5464B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA2BBE9F272B306100A5464B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VitaPot/VitaPot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VitaPot/Preview Content\"";
+				DEVELOPMENT_TEAM = YV26NS784Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VitaPot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.VitaPot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA2BBEA0272B306100A5464B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VitaPot/VitaPot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VitaPot/Preview Content\"";
+				DEVELOPMENT_TEAM = YV26NS784Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VitaPot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.VitaPot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2BBE8A272B306000A5464B /* Build configuration list for PBXProject "VitaPot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2BBE9C272B306100A5464B /* Debug */,
+				FA2BBE9D272B306100A5464B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2BBE9E272B306100A5464B /* Build configuration list for PBXNativeTarget "VitaPot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2BBE9F272B306100A5464B /* Debug */,
+				FA2BBEA0272B306100A5464B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2BBE87272B306000A5464B /* Project object */;
+}
