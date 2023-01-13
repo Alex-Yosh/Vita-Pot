@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA2BBE93272B306000A5464B /* VitaPotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBE92272B306000A5464B /* VitaPotApp.swift */; };
-		FA2BBE95272B306000A5464B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBE94272B306000A5464B /* ContentView.swift */; };
+		FA2BBE95272B306000A5464B /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBE94272B306000A5464B /* MainScreen.swift */; };
 		FA2BBE97272B306100A5464B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBE96272B306100A5464B /* Assets.xcassets */; };
 		FA2BBE9A272B306100A5464B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBE99272B306100A5464B /* Preview Assets.xcassets */; };
 		FA2BBEA7272B39F900A5464B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEA6272B39F900A5464B /* Grid.swift */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		FA2BBE8F272B306000A5464B /* VitaPot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitaPot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2BBE92272B306000A5464B /* VitaPotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaPotApp.swift; sourceTree = "<group>"; };
-		FA2BBE94272B306000A5464B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA2BBE94272B306000A5464B /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		FA2BBE96272B306100A5464B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2BBE99272B306100A5464B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA2BBE9B272B306100A5464B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		FA2BBED2272E14AC00A5464B /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
-				FA2BBE94272B306000A5464B /* ContentView.swift */,
+				FA2BBE94272B306000A5464B /* MainScreen.swift */,
 			);
 			path = "Main Page";
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 				FA2BBEAB272B467C00A5464B /* AddNewPlant.swift in Sources */,
 				FA2BBEAD272BA54B00A5464B /* DetailView.swift in Sources */,
 				FA2BBEB1272C01CE00A5464B /* PlantData.swift in Sources */,
-				FA2BBE95272B306000A5464B /* ContentView.swift in Sources */,
+				FA2BBE95272B306000A5464B /* MainScreen.swift in Sources */,
 				FA2BBEA9272B3C6E00A5464B /* Plant.swift in Sources */,
 				FA2BBE93272B306000A5464B /* VitaPotApp.swift in Sources */,
 				FA2BBECB272E137100A5464B /* GridCells.swift in Sources */,

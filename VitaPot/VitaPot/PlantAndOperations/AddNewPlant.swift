@@ -52,11 +52,9 @@ struct AddNewPlant: View{
             }
             List(){
                 Text("Pick a Catagory:")
-                Listitem(item: plantInfo[0], selected: $selected)
-                Listitem(item: plantInfo[1], selected: $selected)
-                Listitem(item: plantInfo[2], selected: $selected)
-                Listitem(item: plantInfo[3], selected: $selected)
-                Listitem(item: plantInfo[4], selected: $selected)
+                ForEach(0...4, id: \.self){i in
+                    Listitem(item: plantInfo[i], selected: $selected)
+                }
             }
             
         }

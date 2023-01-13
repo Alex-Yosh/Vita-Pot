@@ -7,33 +7,33 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainScreen: View {
     @AppStorage("isDarkMode") var isDarkMode: Bool = true
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView{
-            ZStack(){
-                Image(colorScheme == .dark ? "DarkTitle" : "Title").resizable().aspectRatio(contentMode: .fit).padding().offset(y:-350)
+            VStack(){
+                Image(colorScheme == .dark ? "DarkTitle" : "Title").resizable().aspectRatio(contentMode: .fit).padding(.horizontal, 10)
                 HStack{
                     Intro()
                     DarkModeButton()
-                    
-                }.offset(y: -250)
-            PlantGrid()
-            }
+                }
+                PlantGrid()
+            }.navigationBarTitle("")
+                .navigationBarHidden(true)
         }
     }
 }
 
 
 
-struct ContentView_Previews: PreviewProvider {
+struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            MainScreen()
         }
     }
 }
 
- 
+

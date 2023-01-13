@@ -12,7 +12,7 @@ struct VitaPotApp: App {
     @AppStorage("isDarkMode") var isDarkMode: Bool = true
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.colorScheme, isDarkMode ? .dark: .light).preferredColorScheme(isDarkMode ? .dark : .light)
+            MainScreen().environment(\.colorScheme, isDarkMode ? .dark: .light).preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
