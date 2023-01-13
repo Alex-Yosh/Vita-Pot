@@ -26,7 +26,7 @@ struct DataInput:View{
 struct AddNewPlant: View{
     
     @State private var bgColor =
-        Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0)
+    Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0)
     @Binding var rootIsActive: Bool
     @StateObject var plantitems: PlantItems
     @State private var name: String = ""
@@ -38,16 +38,16 @@ struct AddNewPlant: View{
     
     var body: some View{
         Form{
-            Section(header: Text("Plant Details")){
+            Section(){
                 VStack{
                     DataInput(title: "Name", userInput: $name)
                     Text(nameNotification).foregroundColor(.red).fontWeight(.light).font(.system(size: 15)).frame(alignment: .leading)
                     DataInput(title: "Type of Plant", userInput: $typeofplant)
                     Text(typeNotification).foregroundColor(.red).fontWeight(.light).font(.system(size: 15)).frame(alignment: .leading)
-                    ZStack{
-                        Text("Pick Colour:")
-                        ColorPicker("", selection: $bgColor, supportsOpacity: false).offset(x: -85)
-                    }.offset(x: -15)
+                    HStack{
+                        Text("Pick Colour")
+                        ColorPicker("", selection: $bgColor, supportsOpacity: false).frame(alignment: .leading)
+                    }
                 }
             }
             List(){
@@ -77,10 +77,10 @@ struct AddNewPlant: View{
         }){
             Text("Add Plant")
         }.disabled(name == "" || selected.catagory == "" || typeofplant == "" || bgColor ==
-                    Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0))
+                   Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0))
     }
     
-        
+    
     
     
     func addNewPlant(){
