@@ -13,17 +13,14 @@
 		FA2BBE9A272B306100A5464B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBE99272B306100A5464B /* Preview Assets.xcassets */; };
 		FA2BBEA7272B39F900A5464B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEA6272B39F900A5464B /* Grid.swift */; };
 		FA2BBEA9272B3C6E00A5464B /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEA8272B3C6E00A5464B /* Plant.swift */; };
-		FA2BBEAB272B467C00A5464B /* AddNewPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */; };
-		FA2BBEAD272BA54B00A5464B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAC272BA54B00A5464B /* DetailView.swift */; };
-		FA2BBEAF272BB49700A5464B /* RemovePlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAE272BB49700A5464B /* RemovePlant.swift */; };
+		FA2BBEAB272B467C00A5464B /* PlantFormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAA272B467C00A5464B /* PlantFormScreen.swift */; };
+		FA2BBEAD272BA54B00A5464B /* PlantDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEAC272BA54B00A5464B /* PlantDetailScreen.swift */; };
 		FA2BBEB1272C01CE00A5464B /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEB0272C01CE00A5464B /* PlantData.swift */; };
 		FA2BBEBF272CE78F00A5464B /* Letters for Learners.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2BBEBE272CE78E00A5464B /* Letters for Learners.ttf */; };
-		FA2BBEC5272D616A00A5464B /* EditPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC4272D616A00A5464B /* EditPlant.swift */; };
 		FA2BBEC7272DFFC200A5464B /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC6272DFFC200A5464B /* Greetings.swift */; };
 		FA2BBEC9272E005B00A5464B /* DarkmodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEC8272E005B00A5464B /* DarkmodeButton.swift */; };
 		FA2BBECB272E137100A5464B /* GridCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBECA272E137100A5464B /* GridCells.swift */; };
-		FA2BBED7272E154F00A5464B /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBED6272E154F00A5464B /* Favourite.swift */; };
-		FA2BBED9272F63C900A5464B /* CannotSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBED8272F63C800A5464B /* CannotSelect.swift */; };
+		FA2BBED7272E154F00A5464B /* BottomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBED6272E154F00A5464B /* BottomButtons.swift */; };
 		FA2BBEDC272F66E000A5464B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BBEDB272F66E000A5464B /* Bluetooth.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,17 +33,14 @@
 		FA2BBE9B272B306100A5464B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2BBEA6272B39F900A5464B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		FA2BBEA8272B3C6E00A5464B /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
-		FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlant.swift; sourceTree = "<group>"; };
-		FA2BBEAC272BA54B00A5464B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		FA2BBEAE272BB49700A5464B /* RemovePlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovePlant.swift; sourceTree = "<group>"; };
+		FA2BBEAA272B467C00A5464B /* PlantFormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFormScreen.swift; sourceTree = "<group>"; };
+		FA2BBEAC272BA54B00A5464B /* PlantDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailScreen.swift; sourceTree = "<group>"; };
 		FA2BBEB0272C01CE00A5464B /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
 		FA2BBEBE272CE78E00A5464B /* Letters for Learners.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners.ttf"; sourceTree = "<group>"; };
-		FA2BBEC4272D616A00A5464B /* EditPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlant.swift; sourceTree = "<group>"; };
 		FA2BBEC6272DFFC200A5464B /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 		FA2BBEC8272E005B00A5464B /* DarkmodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkmodeButton.swift; sourceTree = "<group>"; };
 		FA2BBECA272E137100A5464B /* GridCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCells.swift; sourceTree = "<group>"; };
-		FA2BBED6272E154F00A5464B /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
-		FA2BBED8272F63C800A5464B /* CannotSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannotSelect.swift; sourceTree = "<group>"; };
+		FA2BBED6272E154F00A5464B /* BottomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtons.swift; sourceTree = "<group>"; };
 		FA2BBEDB272F66E000A5464B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		FAE0523127A74EA7007B2F61 /* VitaPot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VitaPot.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,9 +129,7 @@
 			children = (
 				FA2BBEA8272B3C6E00A5464B /* Plant.swift */,
 				FA2BBEB0272C01CE00A5464B /* PlantData.swift */,
-				FA2BBEAA272B467C00A5464B /* AddNewPlant.swift */,
-				FA2BBEAE272BB49700A5464B /* RemovePlant.swift */,
-				FA2BBEC4272D616A00A5464B /* EditPlant.swift */,
+				FA2BBEAA272B467C00A5464B /* PlantFormScreen.swift */,
 			);
 			path = PlantAndOperations;
 			sourceTree = "<group>";
@@ -145,9 +137,8 @@
 		FA2BBED0272E145D00A5464B /* DetailsPage */ = {
 			isa = PBXGroup;
 			children = (
-				FA2BBEAC272BA54B00A5464B /* DetailView.swift */,
-				FA2BBED6272E154F00A5464B /* Favourite.swift */,
-				FA2BBED8272F63C800A5464B /* CannotSelect.swift */,
+				FA2BBEAC272BA54B00A5464B /* PlantDetailScreen.swift */,
+				FA2BBED6272E154F00A5464B /* BottomButtons.swift */,
 			);
 			path = DetailsPage;
 			sourceTree = "<group>";
@@ -255,10 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2BBEAF272BB49700A5464B /* RemovePlant.swift in Sources */,
 				FA2BBEDC272F66E000A5464B /* Bluetooth.swift in Sources */,
-				FA2BBEAB272B467C00A5464B /* AddNewPlant.swift in Sources */,
-				FA2BBEAD272BA54B00A5464B /* DetailView.swift in Sources */,
+				FA2BBEAB272B467C00A5464B /* PlantFormScreen.swift in Sources */,
+				FA2BBEAD272BA54B00A5464B /* PlantDetailScreen.swift in Sources */,
 				FA2BBEB1272C01CE00A5464B /* PlantData.swift in Sources */,
 				FA2BBE95272B306000A5464B /* MainScreen.swift in Sources */,
 				FA2BBEA9272B3C6E00A5464B /* Plant.swift in Sources */,
@@ -266,10 +256,8 @@
 				FA2BBECB272E137100A5464B /* GridCells.swift in Sources */,
 				FA2BBEA7272B39F900A5464B /* Grid.swift in Sources */,
 				FA2BBEC9272E005B00A5464B /* DarkmodeButton.swift in Sources */,
-				FA2BBED7272E154F00A5464B /* Favourite.swift in Sources */,
+				FA2BBED7272E154F00A5464B /* BottomButtons.swift in Sources */,
 				FA2BBEC7272DFFC200A5464B /* Greetings.swift in Sources */,
-				FA2BBED9272F63C900A5464B /* CannotSelect.swift in Sources */,
-				FA2BBEC5272D616A00A5464B /* EditPlant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

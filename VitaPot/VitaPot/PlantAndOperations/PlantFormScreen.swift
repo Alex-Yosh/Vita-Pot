@@ -12,23 +12,27 @@ import Combine
 struct DataInput:View{
     var title: String
     @Binding var userInput: String
+    var previousText: String = ""
+    var typeNotification: String
     
     var body: some View{
         VStack(alignment: HorizontalAlignment.leading){
             Text(title).font(.headline)
-            TextField("Enter \(title)", text: $userInput).textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField(previousText, text: $userInput).textFieldStyle(RoundedBorderTextFieldStyle())
+            Text(typeNotification).foregroundColor(.red).fontWeight(.light).font(.system(size: 15)).frame(alignment: .leading)
         }.padding()
     }
     
 }
 
 
-struct AddNewPlant: View{
-    
+struct PlantFormScreen: View{
+    @State var selectedplant: SelectedPlant?
     @State private var bgColor =
     Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0)
     @Binding var rootIsActive: Bool
     @StateObject var plantitems: PlantItems
+    var isEditting: Bool
     @State private var name: String = ""
     @State private var typeofplant: String = ""
     @State private var nameNotification = ""
@@ -40,10 +44,8 @@ struct AddNewPlant: View{
         Form{
             Section(){
                 VStack{
-                    DataInput(title: "Name", userInput: $name)
-                    Text(nameNotification).foregroundColor(.red).fontWeight(.light).font(.system(size: 15)).frame(alignment: .leading)
-                    DataInput(title: "Type of Plant", userInput: $typeofplant)
-                    Text(typeNotification).foregroundColor(.red).fontWeight(.light).font(.system(size: 15)).frame(alignment: .leading)
+                    DataInput(title: "Name", userInput: $name, previousText: selectedplant?.selectedplant.name! ?? "", typeNotification: nameNotification)
+                    DataInput(title: "Type of Plant", userInput: $typeofplant, previousText: selectedplant?.selectedplant.type! ?? "", typeNotification: typeNotification)
                     HStack{
                         Text("Pick Colour")
                         ColorPicker("", selection: $bgColor, supportsOpacity: false).frame(alignment: .leading)
@@ -57,13 +59,20 @@ struct AddNewPlant: View{
                 }
             }
             
-        }
+        }.onAppear(perform: {
+            bgColor = Color(.sRGB, red: Double(Float(selectedplant?.selectedplant.red! ?? 1.0)), green: Double(Float(selectedplant?.selectedplant.green! ?? 1.0)), blue: Double(Float(selectedplant?.selectedplant.blue! ?? 1.0)))
+            selected = selectedplant?.selectedplant ?? Plant(catagory: "", Favour: false)
+        })
         Button(action: {
             let x:Bool = canPassName()
             let y:Bool = canPassType()
             
             if(x && y){
-                addNewPlant()
+                if (isEditting){
+                    edit()
+                }else{
+                    addNewPlant()
+                }
                 self.rootIsActive = false
                 self.plantitems.save()
             }
@@ -75,12 +84,33 @@ struct AddNewPlant: View{
             }
             
         }){
-            Text("Add Plant")
-        }.disabled(name == "" || selected.catagory == "" || typeofplant == "" || bgColor ==
-                   Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0))
+            Text(isEditting ? "Confirm" : "Add Plant")
+        }.disabled(!isEditting && (name == "" || selected.catagory == "" || typeofplant == "" || bgColor ==
+                   Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0)))
     }
     
-    
+    func edit(){
+        let x: Int = plantitems.plantsOwned.firstIndex(where: {$0 == selectedplant!.selectedplant}) ?? -1
+        if (name != "")
+        {
+            selectedplant!.selectedplant.name = name
+        }
+        if (typeofplant != "")
+        {
+            selectedplant!.selectedplant.type = typeofplant
+        }
+        if (bgColor !=
+            Color(.sRGB, red: 1.0, green: 1.0, blue: 1.0)){
+            let y = bgColor.cgColor?.components
+            selectedplant!.selectedplant.red = y?[0]
+            selectedplant!.selectedplant.green = y?[1]
+            selectedplant!.selectedplant.blue = y?[2]
+        }
+        if (x>=0){
+            selectedplant!.selectedplant.catagory = selected.catagory
+            plantitems.editplant(x, selectedplant!.selectedplant)
+        }
+    }
     
     
     func addNewPlant(){
@@ -101,7 +131,7 @@ struct AddNewPlant: View{
             }
         }
         
-        if (name.count > 12)
+        if (name.count > 8)
         {
             nameNotification = "Name Too Long"
             return false
@@ -111,7 +141,7 @@ struct AddNewPlant: View{
     }
     
     func canPassType() ->Bool{
-        if (typeofplant.count > 12)
+        if (typeofplant.count > 8)
         {
             typeNotification = "Type of Plant is Too Long"
             return false

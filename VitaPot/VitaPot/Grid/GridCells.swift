@@ -15,17 +15,16 @@ struct CellContent: View{
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View{
-        NavigationLink(destination: PlantDetail(plantitems: self.plantitems, rootIsActive: self.$rootIsActive, selectedplant: selectedplant), isActive: self.$rootIsActive){
+        NavigationLink(destination: PlantDetailScreen(plantitems: self.plantitems, rootIsActive: self.$rootIsActive, selectedplant: selectedplant), isActive: self.$rootIsActive){
         ZStack{
             Rectangle().frame(minWidth: 100, maxWidth: .infinity, minHeight: 150).foregroundColor(Color(.sRGB, red: Double(Float(selectedplant.selectedplant.red!)), green: Double(Float(selectedplant.selectedplant.green!)), blue: Double(Float(selectedplant.selectedplant.blue!)))).border(pickcolour(), width: 5).cornerRadius(10)
             HStack{
-                Image("\(selectedplant.selectedplant.catagory)").resizable().aspectRatio(contentMode: .fit).frame(width: 100, height: 100, alignment: .leading)
+                Image("\(selectedplant.selectedplant.catagory)").resizable().aspectRatio(contentMode: .fit).frame(width: 80, height: 80, alignment: .leading)
                 VStack{
                         Text(selectedplant.selectedplant.name!)
                         Text("the")
                         Text(selectedplant.selectedplant.type!)
-                }.foregroundColor(invertedpickcolour()).font(Font.custom("Letters for Learners", size: 25))
-                Spacer()
+                }.foregroundColor(invertedpickcolour()).font(Font.custom("Letters for Learners", size: 25)).padding(.trailing, 10)
             }
         }.padding(10)
         }
@@ -70,7 +69,7 @@ struct AddCell: View{
         ZStack{
             Rectangle().frame(minWidth: 100, maxWidth: .infinity, minHeight: 150).foregroundColor(.clear).border(colorScheme == .dark ? Color.white : Color.black, width: 5).cornerRadius(10)
             NavigationLink(
-                destination: AddNewPlant(rootIsActive: $ToRoot, plantitems: plantitems), isActive: $ToRoot){
+                destination: PlantFormScreen(rootIsActive: $ToRoot, plantitems: plantitems, isEditting: false), isActive: $ToRoot){
                 ZStack{
                     Circle().frame(width: 100, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).foregroundColor(colorScheme == .dark ? Color(.sRGB, red: 0.250, green: 0.250, blue: 0.250):Color(.sRGB, red: 0.950, green: 0.950, blue: 0.950))
                     Image(systemName: "plus").resizable().foregroundColor(colorScheme == .dark ? Color.black : Color.white).frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

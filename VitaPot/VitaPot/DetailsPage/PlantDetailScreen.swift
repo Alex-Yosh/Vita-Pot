@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct PlantDetail: View{
+struct PlantDetailScreen: View{
     @StateObject var plantitems: PlantItems
     @Binding var rootIsActive: Bool
     @StateObject var selectedplant: SelectedPlant
@@ -30,10 +30,10 @@ struct PlantDetail: View{
                 Group{
                     Spacer()
                     if (OneFavoured() && selectedplant.selectedplant.Favour == false){
-                        CannotSelect(title: "Favourite")
+                        CannotSelectButton(title: "Favourite")
                     }
                     else{
-                        Favourite(plantitems: plantitems, selectedplant: selectedplant)
+                        FavouriteButton(plantitems: plantitems, selectedplant: selectedplant)
                     }
                     Spacer()
                 }
@@ -47,9 +47,9 @@ struct PlantDetail: View{
                 Group{
                     Spacer()
                     if (selectedplant.selectedplant.Favour == true){
-                        CannotSelect(title: "Remove")
+                        CannotSelectButton(title: "Remove")
                     }else{
-                        RemovePlant(plantitems: self.plantitems, rootIsActive: $rootIsActive, selectedplant: selectedplant)
+                        RemovePlantButton(plantitems: self.plantitems, rootIsActive: $rootIsActive, selectedplant: selectedplant)
                     }
                     Spacer()
                 }
